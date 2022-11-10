@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="edtidpartrao"
+        >
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:textColorHint">#575656</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+
+
+    </style>
+
+    <style name="e">
+        <item name="textAppearanceBodyLarge">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">#DC2B2B</item>
+    </style>
+    <style name="Dialoganimation">
+        <item name="android:windowEnterAnimation">@anim/showdialo</item>
+        <item name="android:windowExitAnimation">@anim/saindashow</item>
+    </style>
+</resources>

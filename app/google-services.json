@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "984003036017",
+    "firebase_url": "https://empresarafa-1efea-default-rtdb.firebaseio.com",
+    "project_id": "empresarafa-1efea",
+    "storage_bucket": "empresarafa-1efea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984003036017:android:c2ea8fa576fdbdb8d4acd0",
+        "android_client_info": {
+          "package_name": "com.rafa.empresa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984003036017-7hdrpbgcbu6qdimkcev2rj33o7972ela.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rafa.empresa",
+            "certificate_hash": "4700a0f60327707b6312fa44546ecbe129e619ba"
+          }
+        },
+        {
+          "client_id": "984003036017-o0c7i3dqsmjmsivj0agc4d2e6k4vl7fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAEVylGruTz30TA0o5gau5S8pWGRFik6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984003036017-o0c7i3dqsmjmsivj0agc4d2e6k4vl7fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

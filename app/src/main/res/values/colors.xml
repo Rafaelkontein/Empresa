@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#089ADD</color>
+    <color name="purple_500">#0AC3DC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="Rafae">#510283AC</color>
+    <color name="teal_200">#20A7B4</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="corpadrao">#20A7B4</color>
+    <color name="tais">#0EC5D6</color>
+    <color name="cordefundo">#1C2934</color>
+    <color name="cor_buutom">#FF131B22</color>
+</resources>
