@@ -43,6 +43,7 @@ public class Foto_de_Perfil extends AppCompatActivity {
                 galareia.setType("image/*");
                 startActivityForResult(galareia,2);
                 //sdvgadsvghas
+                //afjnfjnkfkjasnjkajknasjknasjknafjknasjkfn
 
             }
         });
