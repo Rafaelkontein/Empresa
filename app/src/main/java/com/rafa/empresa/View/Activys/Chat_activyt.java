@@ -63,6 +63,7 @@ public class Chat_activyt extends AppCompatActivity {
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("Tocou","");
                 evniamensagem();
             }
         });
@@ -76,9 +77,9 @@ public class Chat_activyt extends AppCompatActivity {
         String useratual = FirebaseAuth.getInstance().getUid();
         Long tempo =System.currentTimeMillis();
 
-        Mensagem mensagem = new Mensagem(cap,tempo,useratual,usuarioid);
+        Mensagem mensagem = new Mensagem(cap,tempo,useratual,usuariosname);
         if(!mensagem.getTextomensagem().isEmpty()){
-            FirebaseFirestore.getInstance().collection("/conversas").document(useratual).collection(usuarioid).add(mensagem).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            FirebaseFirestore.getInstance().collection("/conversas").document(useratual).collection(usuariosname).add(mensagem).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
                     Log.d("SucessoChat",documentReference.getId());
@@ -90,7 +91,7 @@ public class Chat_activyt extends AppCompatActivity {
                 }
             });
 
-            FirebaseFirestore.getInstance().collection("/conversas").document(usuarioid).collection(useratual).add(mensagem).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            FirebaseFirestore.getInstance().collection("/conversas").document(usuariosname).collection(useratual).add(mensagem).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
                     Log.d("SucessoChat","");
