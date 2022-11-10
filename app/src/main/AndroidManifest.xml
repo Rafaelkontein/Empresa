@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rafa.empresa">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Empresa">
+        <activity
+            android:name=".View.Activys.Chat_activyt"
+            android:exported="false" />
+        <activity
+            android:name=".View.Activys.Lista_de_conversas"
+            android:exported="false" />
         <activity
             android:name=".Foto_de_Perfil"
             android:exported="false" />
@@ -49,6 +53,16 @@
             </intent-filter>
         </activity>
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.rafa.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <service
             android:name=".Firebase.MyFirebaseMessagingService"
             android:exported="false">
@@ -56,18 +70,8 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
-        <provider
-            android:authorities="com.rafa.myapplication.fileprovider"
-            android:name="androidx.core.content.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-
-
-        </provider>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -129,6 +131,15 @@ public class Dados_pessoais extends AppCompatActivity {
                         confirmaemailcap.contains("@") && confirmaemailcap.contains(".com") &&
                         emailcap.contains("@") && emailcap.contains(".com") && checkBox.isChecked()
                         && !datanacimento.getText().toString().equals("dd/MM/AAAAA")){
+
+
+                    SharedPreferences prefs;
+                    prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                    SharedPreferences.Editor ed = prefs.edit();
+                    ed.putString("nomeuser", nomecap);
+                    ed.putString("emailuser",emailcap);
+                    ed.apply();
+
                     Intent intent = new Intent(Dados_pessoais.this, Endereco_pessoal.class);
                     startActivity(intent);
                 }else{

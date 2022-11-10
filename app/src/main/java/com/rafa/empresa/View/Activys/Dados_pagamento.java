@@ -3,14 +3,17 @@ package com.rafa.empresa.View.Activys;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.rafa.empresa.Firebase.Faz_cadastro;
 import com.rafa.empresa.Interfaces.Deleate;
 import com.rafa.empresa.R;
 import com.rafa.empresa.Task.RequestBanco;
@@ -23,6 +26,7 @@ public class Dados_pagamento extends AppCompatActivity implements Deleate {
     private EditText agencia;
     private EditText conta;
     private Button buttonfinalizar;
+    EditText senha ;
     public  static  String banco_selecionado;
     RequestBanco requestBanco = new RequestBanco();
     private Ouvintes ouvintes = new Ouvintes();
@@ -38,6 +42,7 @@ public class Dados_pagamento extends AppCompatActivity implements Deleate {
         conta = findViewById(R.id.conta);
         buttonfinalizar = findViewById(R.id.buttonfinalizar);
         ouvintes.ouvinteDadosPagamentos(agencia,conta);
+        senha = findViewById(R.id.senhadado);
 
         GradientDrawable corbanco = (GradientDrawable) banco.getBackground();
         corbanco.mutate();
@@ -72,6 +77,18 @@ public class Dados_pagamento extends AppCompatActivity implements Deleate {
                     corbanco.setStroke(3, Color.parseColor("#20A7B4"));
                     coragencia.setStroke(3, Color.parseColor("#20A7B4"));
                     corconta.setStroke(3, Color.parseColor("#20A7B4"));
+                    SharedPreferences prefs;
+                    prefs = PreferenceManager.
+                            getDefaultSharedPreferences(getApplicationContext());
+
+                    String emailuser = prefs.getString("emailuser","");
+                    String nomeuser = prefs.getString("nomeuser","");
+
+                    Faz_cadastro faz_cadastro = new Faz_cadastro();
+                    faz_cadastro.faz_cadastro(getApplicationContext(),emailuser,senha.getText().toString(),nomeuser);
+
+
+
                     Intent in = new Intent(Dados_pagamento.this, Tela_login.class);
                     startActivity(in);
                 }

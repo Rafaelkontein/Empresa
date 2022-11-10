@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn_entar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Foto_de_Perfil.class);
+                Intent intent = new Intent(getApplicationContext(), Tela_login.class);
                 startActivity(intent);
             }
         });

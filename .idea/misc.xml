@@ -78,6 +78,7 @@
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3045" />
         <entry key="app/src/main/res/drawable/menudebaixo.xml" value="0.4135" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.522" />
+        <entry key="app/src/main/res/layout/activity_chat_activyt.xml" value="0.5192708333333333" />
         <entry key="app/src/main/res/layout/activity_dados_pagamento.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/activity_dados_pessoais.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/activity_endereco_pessoal.xml" value="0.5276041666666667" />
@@ -85,6 +86,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/activity_primeira_tela.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/activity_segundatelaprincipal.xml" value="0.5276041666666667" />
+        <entry key="app/src/main/res/layout/activity_tela_login.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_telaprincipal.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/app_bar_segundatelaprincipal.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/app_bar_telaprincipal.xml" value="0.5276041666666667" />
@@ -97,6 +99,9 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.5260416666666666" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.5276041666666667" />
         <entry key="app/src/main/res/layout/fragment_teste_fragment.xml" value="0.5276041666666667" />
+        <entry key="app/src/main/res/layout/item_mensagem.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/item_recebendo_mensagem.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/lista_contatos.xml" value="0.55" />
         <entry key="app/src/main/res/layout/modal_cidade_fragment.xml" value="0.2294776119402985" />
         <entry key="app/src/main/res/layout/modal_uf_fragment.xml" value="0.22905027932960895" />
         <entry key="app/src/main/res/layout/nav_header_segundatelaprincipal.xml" value="0.5276041666666667" />

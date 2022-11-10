@@ -8,20 +8,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:984003036017:android:c2ea8fa576fdbdb8d4acd0",
+        "mobilesdk_app_id": "1:984003036017:android:820af513ab2cb9b7d4acd0",
         "android_client_info": {
           "package_name": "com.rafa.empresa"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "984003036017-7hdrpbgcbu6qdimkcev2rj33o7972ela.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.rafa.empresa",
-            "certificate_hash": "4700a0f60327707b6312fa44546ecbe129e619ba"
-          }
-        },
         {
           "client_id": "984003036017-o0c7i3dqsmjmsivj0agc4d2e6k4vl7fu.apps.googleusercontent.com",
           "client_type": 3
