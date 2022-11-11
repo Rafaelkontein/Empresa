@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.rafa.empresa.Modais.Mensagem;
+import com.rafa.empresa.Modais.usuarios;
 import com.rafa.empresa.R;
 
 import java.util.ArrayList;
@@ -20,16 +21,16 @@ import java.util.List;
 public class Adapter_chat extends RecyclerView.Adapter<Adapter_chat.MyviewholderChat> {
     List <Mensagem >listmensagem = new ArrayList<>();
 
-    String usuarioatual ;
+
 
 
 
     private  final  int tipohum= 1;
     private final  int tipobot2 =2;
 
-    public Adapter_chat(List<Mensagem> listmensagem, String usuarioatual) {
+    public Adapter_chat(List<Mensagem> listmensagem) {
         this.listmensagem = listmensagem;
-        this.usuarioatual = usuarioatual;
+
     }
 
     @NonNull
@@ -72,10 +73,12 @@ public class Adapter_chat extends RecyclerView.Adapter<Adapter_chat.Myviewholder
 
         String f = FirebaseAuth.getInstance().getUid();
 
-        if (usuarioatual == FirebaseAuth.getInstance().getUid()){
-            return tipobot2;
-        }else {
+
+
+        if (listmensagem.get(position).getMensagem_user1().equals(FirebaseAuth.getInstance().getUid()) ){
             return tipohum;
+        }else {
+            return tipobot2;
         }
 
 

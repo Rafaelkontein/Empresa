@@ -7,12 +7,17 @@ public class Mensagem {
     private  String mensagem_user1;
     private String mensagem_user2;
 
+    public Mensagem(){
+
+    }
+
     public Mensagem(String textomensagem, long tempodamensagem, String mensagem_user1, String mensagem_user2) {
         this.textomensagem = textomensagem;
         this.tempodamensagem = tempodamensagem;
         this.mensagem_user1 = mensagem_user1;
         this.mensagem_user2 = mensagem_user2;
     }
+
 
     public String getTextomensagem() {
         return textomensagem;
