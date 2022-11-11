@@ -148,6 +148,7 @@ public class Chat_activyt extends AppCompatActivity {
                     Contato contato = new Contato();
                     contato.setUltima_mensagem(mensagem.getTextomensagem());
                     contato.setUudi(usuariosname);
+                    contato.setUsername(usuarioid);
                     contato.setTempo_ultima_hora(mensagem.getTempodamensagem());
 
                     FirebaseFirestore.getInstance().collection("/ultima_mensagem")
