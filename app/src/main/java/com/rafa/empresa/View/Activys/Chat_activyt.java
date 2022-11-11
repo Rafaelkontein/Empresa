@@ -24,7 +24,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.iid.FirebaseInstanceIdReceiver;
+import com.google.firebase.iid.internal.FirebaseInstanceIdInternal;
 import com.rafa.empresa.Adapters.Adapter_chat;
+import com.rafa.empresa.Modais.Contato;
 import com.rafa.empresa.Modais.Mensagem;
 import com.rafa.empresa.Modais.usuarios;
 import com.rafa.empresa.R;
@@ -74,6 +77,7 @@ public class Chat_activyt extends AppCompatActivity {
                          me = documentSnapshot.toObject(usuarios.class);
                          fetMessege();
 
+
                     }
                 });
 
@@ -89,6 +93,8 @@ public class Chat_activyt extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void fetMessege() {
 
@@ -138,6 +144,18 @@ public class Chat_activyt extends AppCompatActivity {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
                     Log.d("SucessoChat",documentReference.getId());
+
+                    Contato contato = new Contato();
+                    contato.setUltima_mensagem(mensagem.getTextomensagem());
+                    contato.setUudi(usuariosname);
+                    contato.setTempo_ultima_hora(mensagem.getTempodamensagem());
+
+                    FirebaseFirestore.getInstance().collection("/ultima_mensagem")
+                            .document(useratual).collection("contatos")
+                            .document(usuariosname).set(contato);
+
+
+
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -150,6 +168,16 @@ public class Chat_activyt extends AppCompatActivity {
                 @Override
                 public void onSuccess(DocumentReference documentReference) {
                     Log.d("SucessoChat","");
+
+                    Contato contato = new Contato();
+                    contato.setUltima_mensagem(mensagem.getTextomensagem());
+                    contato.setUsername(usuarioid);
+                    contato.setUudi(usuariosname);
+                    contato.setTempo_ultima_hora(mensagem.getTempodamensagem());
+
+                    FirebaseFirestore.getInstance().collection("/ultima_mensagem")
+                            .document(usuariosname).collection("contatos")
+                            .document(useratual).set(contato);
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

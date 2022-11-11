@@ -102,6 +102,7 @@
         <entry key="app/src/main/res/layout/item_mensagem.xml" value="0.5322916666666667" />
         <entry key="app/src/main/res/layout/item_recebendo_mensagem.xml" value="0.5322916666666667" />
         <entry key="app/src/main/res/layout/lista_contatos.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/lista_conversas.xml" value="0.5296875" />
         <entry key="app/src/main/res/layout/modal_cidade_fragment.xml" value="0.2294776119402985" />
         <entry key="app/src/main/res/layout/modal_uf_fragment.xml" value="0.22905027932960895" />
         <entry key="app/src/main/res/layout/nav_header_segundatelaprincipal.xml" value="0.5276041666666667" />
