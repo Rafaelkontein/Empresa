@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.rafa.empresa.Firebase.Faz_cadastro;
 import com.rafa.empresa.Interfaces.Deleate;
+import com.rafa.empresa.Modais.Variavel_cadastro;
 import com.rafa.empresa.R;
 import com.rafa.empresa.Task.RequestBanco;
 import com.rafa.empresa.Uteis.Ouvintes;
@@ -84,8 +85,14 @@ public class Dados_pagamento extends AppCompatActivity implements Deleate {
                     String emailuser = prefs.getString("emailuser","");
                     String nomeuser = prefs.getString("nomeuser","");
 
+                    Variavel_cadastro.banco = banco.getText().toString();
+                    Variavel_cadastro.agencia =agencia.getText().toString();
+                    Variavel_cadastro.conta = conta.getText().toString();
+
                     Faz_cadastro faz_cadastro = new Faz_cadastro();
-                    faz_cadastro.faz_cadastro(getApplicationContext(),emailuser,senha.getText().toString(),nomeuser);
+                    faz_cadastro.faz_cadastro(getApplicationContext(),emailuser,senha.getText().toString(),nomeuser,
+                            Variavel_cadastro.sobrenome,Variavel_cadastro.data_nacimento,Variavel_cadastro.cpf,Variavel_cadastro.celular,
+                            Variavel_cadastro.cep,Variavel_cadastro.rua,Variavel_cadastro.numero,Variavel_cadastro.bairro,Variavel_cadastro.uf,Variavel_cadastro.cidade);
 
 
 

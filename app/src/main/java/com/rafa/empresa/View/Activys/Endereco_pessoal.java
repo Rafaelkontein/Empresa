@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.rafa.empresa.Interfaces.Deleate;
 import com.rafa.empresa.Interfaces.Isyncserveser;
 import com.rafa.empresa.Enuns.Localidades;
+import com.rafa.empresa.Modais.Variavel_cadastro;
 import com.rafa.empresa.Uteis.Manipulaçãostr;
 import com.rafa.empresa.Modais.ParteCadastro.Cidade;
 import com.rafa.empresa.R;
@@ -121,6 +122,12 @@ public class Endereco_pessoal extends AppCompatActivity implements Deleate {
                 if(rua.getText().toString().length()>1 && cep.getText().toString().length() >= 9
                         && bairro.getText().toString().length() >1 &&
                         !cidade.getText().toString().equals("Cidade") && !uf.getText().toString().equals("UF")) {
+
+                    Variavel_cadastro.rua = rua.getText().toString();
+                    Variavel_cadastro.cep = cep.getText().toString();
+                    Variavel_cadastro.bairro = bairro.getText().toString();
+                    Variavel_cadastro.cidade = cidade.getText().toString();
+                    Variavel_cadastro.uf = uf.getText().toString();
 
                     Intent intent = new Intent(Endereco_pessoal.this, Dados_pagamento.class);
                     startActivity(intent);

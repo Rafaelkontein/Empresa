@@ -17,7 +17,9 @@ import com.rafa.empresa.Modais.ParteCadastro.usuarios;
 
 public class Faz_cadastro {
 
-    public  void  faz_cadastro(Context context,String email, String senha,String nome){
+    public  void  faz_cadastro(Context context,String email, String senha,String nome, String sobrenome,
+                               String data_nacimento, String cpf, String celular,
+                               String cep, String rua, String numero, String bairro, String uf, String cidade){
 
 
 
@@ -30,7 +32,10 @@ public class Faz_cadastro {
                                 Log.d("FirebaseSucesso", task.getResult().getUser().getUid());
 
                                 String id_usuario = FirebaseAuth.getInstance().getUid();
-                                usuarios usuarios = new usuarios(id_usuario,nome);
+
+                                usuarios usuarios = new usuarios(id_usuario,nome, sobrenome,
+                                         data_nacimento,  cpf,  email, celular,
+                                         cep,  rua,  numero,  bairro,  uf,  cidade);
 
                                 FirebaseFirestore.getInstance().collection("users" ).document(id_usuario).set(usuarios).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override

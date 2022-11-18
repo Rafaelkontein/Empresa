@@ -19,6 +19,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.rafa.empresa.Modais.Variavel_cadastro;
 import com.rafa.empresa.Uteis.Manipulaçãostr;
 import com.rafa.empresa.R;
 import com.rafa.empresa.Uteis.Ouvintes;
@@ -139,6 +140,11 @@ public class Dados_pessoais extends AppCompatActivity {
                     ed.putString("nomeuser", nomecap);
                     ed.putString("emailuser",emailcap);
                     ed.apply();
+                    Variavel_cadastro.sobrenome = sobrenomecap;
+                    Variavel_cadastro.cpf = cpfcap;
+                    Variavel_cadastro.email = emailcap;
+                    Variavel_cadastro.celular =celcap;
+                    Variavel_cadastro.data_nacimento = datanacimento.getText().toString();
 
                     Intent intent = new Intent(Dados_pessoais.this, Endereco_pessoal.class);
                     startActivity(intent);
