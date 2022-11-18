@@ -5,13 +5,12 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rafa.empresa.Modais.usuarios;
+import com.rafa.empresa.Modais.ParteCadastro.usuarios;
 import com.rafa.empresa.R;
 import com.rafa.empresa.View.Activys.Chat_activyt;
 

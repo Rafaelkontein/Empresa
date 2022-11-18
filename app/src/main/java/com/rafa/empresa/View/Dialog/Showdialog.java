@@ -13,7 +13,6 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,13 +21,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.rafa.empresa.Adapters.AdapeterBanco;
 import com.rafa.empresa.Adapters.Adapeter_cidade;
 import com.rafa.empresa.Adapters.Adapeter_uf;
-import com.rafa.empresa.Enuns.Localidades;
 import com.rafa.empresa.Interfaces.Deleate;
-import com.rafa.empresa.Modais.Banco;
-import com.rafa.empresa.Modais.Modal_cidade;
+import com.rafa.empresa.Modais.ParteCadastro.Banco;
 import com.rafa.empresa.R;
 import com.rafa.empresa.View.Activys.Dados_pagamento;
-import com.rafa.empresa.View.Activys.Endereco_pessoal;
 import com.rafa.empresa.View.Fragments.BlankViewModel;
 
 import java.util.ArrayList;

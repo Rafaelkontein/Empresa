@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.rafa.empresa.Adapters.Adpter_minhas_conversas;
-import com.rafa.empresa.Modais.Contato;
+import com.rafa.empresa.Modais.Chat.Contato;
 import com.rafa.empresa.databinding.FragmentGalleryBinding;
 
 import java.util.ArrayList;

@@ -7,7 +7,7 @@
     android:background="@drawable/bordas_bottom_shhet"
     android:backgroundTint="#FF131B22"
 
-    tools:context=".Modais.Modal_cidade">
+    tools:context=".Modais.ParteCadastro.Modal_cidade">
 
     <LinearLayout
         android:layout_width="match_parent"

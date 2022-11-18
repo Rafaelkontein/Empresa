@@ -11,10 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rafa.empresa.Modais.Banco;
+import com.rafa.empresa.Modais.ParteCadastro.Banco;
 import com.rafa.empresa.View.Activys.Dados_pagamento;
 import com.rafa.empresa.R;
-import com.rafa.empresa.View.Activys.Endereco_pessoal;
 
 import java.util.List;
 

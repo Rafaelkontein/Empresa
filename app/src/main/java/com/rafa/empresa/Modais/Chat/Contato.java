@@ -1,4 +1,4 @@
-package com.rafa.empresa.Modais;
+package com.rafa.empresa.Modais.Chat;
 
 public class Contato {
     private String uudi;

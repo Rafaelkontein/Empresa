@@ -4,15 +4,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.rafa.empresa.Modais.Mensagem;
-import com.rafa.empresa.Modais.usuarios;
+import com.rafa.empresa.Modais.Chat.Mensagem;
 import com.rafa.empresa.R;
 
 import java.util.ArrayList;

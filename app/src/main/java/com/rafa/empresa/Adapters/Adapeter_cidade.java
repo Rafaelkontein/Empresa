@@ -1,9 +1,7 @@
 package com.rafa.empresa.Adapters;
 
 import android.app.Dialog;
-import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +12,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.rafa.empresa.Interfaces.Deleate;
-import com.rafa.empresa.Modais.Modal_cidade;
 import com.rafa.empresa.R;
 import com.rafa.empresa.View.Activys.Endereco_pessoal;
 

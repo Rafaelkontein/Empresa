@@ -5,7 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -18,9 +18,8 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.firebase.firestore.auth.User;
 import com.rafa.empresa.Adapters.Adapter_Listi_contatos;
-import com.rafa.empresa.Modais.usuarios;
+import com.rafa.empresa.Modais.ParteCadastro.usuarios;
 import com.rafa.empresa.databinding.FragmentSlideshowBinding;
 
 import java.util.ArrayList;

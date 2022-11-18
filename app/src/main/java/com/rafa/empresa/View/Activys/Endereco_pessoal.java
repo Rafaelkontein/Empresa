@@ -19,7 +19,7 @@ import com.rafa.empresa.Interfaces.Deleate;
 import com.rafa.empresa.Interfaces.Isyncserveser;
 import com.rafa.empresa.Enuns.Localidades;
 import com.rafa.empresa.Uteis.Manipulaçãostr;
-import com.rafa.empresa.Modais.Cidade;
+import com.rafa.empresa.Modais.ParteCadastro.Cidade;
 import com.rafa.empresa.R;
 import com.rafa.empresa.Task.RequestCEP;
 import com.rafa.empresa.Uteis.Povoar;

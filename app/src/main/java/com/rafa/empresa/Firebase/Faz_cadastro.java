@@ -2,7 +2,6 @@ package com.rafa.empresa.Firebase;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,9 +12,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.rafa.empresa.Modais.usuarios;
+import com.rafa.empresa.Modais.ParteCadastro.usuarios;
 
 public class Faz_cadastro {
 

@@ -4,7 +4,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.rafa.empresa.Interfaces.Isyncserveser;
-import com.rafa.empresa.Modais.CEP;
+import com.rafa.empresa.Modais.ParteCadastro.CEP;
 
 import retrofit2.Call;
 import retrofit2.Callback;

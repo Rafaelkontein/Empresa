@@ -3,14 +3,12 @@ package com.rafa.empresa.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rafa.empresa.Modais.Contato;
+import com.rafa.empresa.Modais.Chat.Contato;
 import com.rafa.empresa.R;
 
 import java.util.ArrayList;

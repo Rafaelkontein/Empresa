@@ -1,4 +1,4 @@
-package com.rafa.empresa.Modais;
+package com.rafa.empresa.Modais.ParteCadastro;
 
 public class Banco {
     String name;

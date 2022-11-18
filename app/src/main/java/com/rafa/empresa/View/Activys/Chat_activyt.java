@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.AppComponentFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,12 +23,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.firebase.iid.FirebaseInstanceIdReceiver;
-import com.google.firebase.iid.internal.FirebaseInstanceIdInternal;
 import com.rafa.empresa.Adapters.Adapter_chat;
-import com.rafa.empresa.Modais.Contato;
-import com.rafa.empresa.Modais.Mensagem;
-import com.rafa.empresa.Modais.usuarios;
+import com.rafa.empresa.Modais.Chat.Contato;
+import com.rafa.empresa.Modais.Chat.Mensagem;
+import com.rafa.empresa.Modais.ParteCadastro.usuarios;
 import com.rafa.empresa.R;
 
 import java.util.ArrayList;

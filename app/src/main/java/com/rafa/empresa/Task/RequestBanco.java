@@ -5,7 +5,7 @@ import android.util.Log;
 
 import com.rafa.empresa.Interfaces.Deleate;
 import com.rafa.empresa.Interfaces.Isyncserveser;
-import com.rafa.empresa.Modais.Banco;
+import com.rafa.empresa.Modais.ParteCadastro.Banco;
 import com.rafa.empresa.View.Dialog.Showdialog;
 
 import java.util.ArrayList;

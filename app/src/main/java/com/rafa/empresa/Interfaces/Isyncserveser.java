@@ -1,8 +1,8 @@
 package com.rafa.empresa.Interfaces;
 
-import com.rafa.empresa.Modais.Banco;
-import com.rafa.empresa.Modais.CEP;
-import com.rafa.empresa.Modais.Cidade;
+import com.rafa.empresa.Modais.ParteCadastro.Banco;
+import com.rafa.empresa.Modais.ParteCadastro.CEP;
+import com.rafa.empresa.Modais.ParteCadastro.Cidade;
 
 import java.util.List;
 
